@@ -5,7 +5,7 @@ require 'directors_database'
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
   require 'pp'
-  pp nds[:title]
+  pp nds
   nil
 end
 
@@ -17,7 +17,7 @@ def print_first_directors_movie_titles
 
   while counter < movies.length do
       movie = movies[counter]
-      pretty_print_nds(movie)
+      pretty_print_nds(movie[:title])
       counter += 1
   end
 end
