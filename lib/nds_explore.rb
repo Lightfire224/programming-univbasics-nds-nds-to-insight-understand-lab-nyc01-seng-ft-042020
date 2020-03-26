@@ -11,4 +11,14 @@ end
 
 def print_first_directors_movie_titles
   pretty_print_nds(directors_database)
+  
+  first_director = vm[0]
+  movies = first_director[:movies]
+  counter = 0
+
+  while counter < movies.length do
+      movie = movies[counter]
+      p movie[:title]
+      counter += 1
+  end
 end
