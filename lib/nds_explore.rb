@@ -10,8 +10,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  pretty_print_nds(directors_database)
-  
+
   first_director = directors_database[0]
   movies = first_director[:movies]
   counter = 0
